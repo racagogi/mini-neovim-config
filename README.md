@@ -49,9 +49,9 @@ mini-neovim-config
 ```lua
 return{
 "some-plugin"
-config = function()
-some_config()
-end
+	config = function()
+		some_config()
+	end
 }
 ```
 ## add lsp
@@ -68,9 +68,6 @@ vim.api.nvim_create_autocmd('FileType', {
 			single_file_support = true,
 			settings = {
 				somelang = {
-					workspace = {
-						library = vim.api.nvim_get_runtime_file("", true)
-					}
 				}
 
 			}
